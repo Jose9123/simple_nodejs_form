@@ -1,0 +1,117 @@
+<html>
+   <head>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+         #form-heading{
+            background-color: #10067A;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 10px;
+         }
+         .container    {
+            background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+            background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+            margin: 1em auto;
+            position:relative;
+            max-width:825px;
+            min-height:580px;
+            /*font-family: Tahoma, Geneva, sans-serif;*/
+            font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+            font-size: 14px;
+            /*font-style: italic;*/
+            line-height: 24px;
+            font-weight: bold;
+            /*color: #09C;*/
+            text-decoration: none;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            padding:10px;
+            border: 1px solid #999;
+            border: inset 1px solid #333;
+            -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+         }
+         #profilepic{
+            /*padding-bottom: .55em;*/
+           /* height: 45px;
+            margin-bottom: 1.15em;*/
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container" style="max-width: 825px;">
+           <form class="form-horizontal"  action="" method="post" enctype="multipart/form-data">
+               <fieldset>
+
+               <div id="form-heading">
+                  <!-- Form Name -->
+                              <h1>Website Feedback Form</h1>
+               </div>
+               <!-- Text input-->
+               <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                 <label class="col-md-4 control-label" for="fname">First Name</label>  
+                 <div class="col-md-8">
+                 <input id="fname" name="fname" type="text" placeholder="first name" class="form-control input-md" required="">
+                 <span class="help-block"></span>  
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group col-xs-12  col-sm-12 col-md-6 col-lg-6">
+                 <label class="col-md-4 control-label" for="lname">Last Name</label>  
+                 <div class="col-md-8">
+                 <input id="lname" name="lname" type="text" placeholder="last name" class="form-control input-md" required="">
+                 <span class="help-block"></span>  
+                 </div>
+               </div>
+
+               <!-- Textarea -->
+               <div class="form-group col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                 <label class="col-md-5 control-label" for="description">Please describe the problem</label>
+                 <div class="col-md-6">                     
+                   <textarea class="form-control" id="description" name="description"></textarea>
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                 <label class="col-md-5 control-label" for="url">Web URL (Please cut and past e the web address where issue was found)</label>  
+                 <div class="col-md-6">
+                 <input id="url" name="url" type="text" placeholder="URL" class="form-control input-md" required="">
+                 <span class="help-block"></span>  
+                 </div>
+               </div>
+
+               <!-- Text input-->
+               <div class="form-group col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                 <label class="col-md-5 control-label" for="other_contact">Backup Contact Person (Person to contact if your are  not available)</label>  
+                 <div class="col-md-6">
+                 <input id="other_contact" name="other_contact" type="text" placeholder="other contact person" class="form-control input-md" required="">
+                 <span class="help-block"></span>  
+                 </div>
+               </div>
+                <div class="form-group col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                 <label class="col-md-5 control-label" for="profilepic">File attachment</label>  
+                 <div class="col-md-6">
+                 <input id="profilepic" name="profilepic" type="file" class="form-control input-md" required="">
+                 <span class="help-block"></span>  
+                 </div>
+               </div>
+
+               <!-- Button -->
+               <div class="form-group text-center">
+                 <label class="col-md-4 control-label" for="submit"></label>
+                 <div class="col-md-4">
+                   <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+                 </div>
+               </div>
+
+               </fieldset>
+               </form>
+      </div>
+   </body>
+</html>
