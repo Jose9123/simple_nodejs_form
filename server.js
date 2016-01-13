@@ -83,14 +83,14 @@ function processFormFieldsIndividual(req, res) {
 
     //Call back at the end of the form.
     form.on('end', function () {
-        res.writeHead(200, {
-            'content-type': 'text/plain'
-        });
+//        res.writeHead(200, {
+//            'content-type': 'text/plain'
+//        });
 
-        res.write('received the data:\n\n');
-        res.end(util.inspect({
-            fields: fields
-        }));
+//        res.write('received the data:\n\n');
+//        res.end(util.inspect({
+//            fields: fields
+//        }));
         sendEmail(fields);
        
     });
@@ -152,6 +152,6 @@ function sendEmail(formData){
 
 //server.listen(3000, '10.0.2.15');
 //console.log("server listening on 3000");
-server.listen(8080, '10.0.2.15');
+server.listen(8080, '127.0.0.1');
 console.log("server listening on 8080");
 
